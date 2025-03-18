@@ -224,11 +224,9 @@ header nav .menu {
 
     header nav .links ul {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vh;
         position: relative;
-        display: block;
+        left: 50px;
+        display: flex;
     }
 
 }
