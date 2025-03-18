@@ -202,17 +202,22 @@ header nav .menu {
         font-size: 1.7rem;
     }
 
-    header nav .links.close {
-        display: none;
+    header nav .links {
+        display: flex;
+        background: var(--background);
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
     }
 
-    header nav .links.open {
-        display: flex;
+    /* header nav .links.open {
+        display: block;
         background: var(--background);
         flex-direction: column;
         width: 100dvw;
         height: 100dvh;
-    }
+    } */
 
     header nav .links ul {
         flex-direction: column;
