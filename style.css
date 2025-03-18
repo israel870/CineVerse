@@ -202,8 +202,12 @@ header nav .menu {
         font-size: 1.7rem;
     }
 
-    header nav .links {
+    header nav .links.close {
         display: none;
+    }
+
+    header nav .links.open {
+        display: block;
         position: fixed;
         top: 0px;
         left: 0;
@@ -212,7 +216,7 @@ header nav .menu {
         background-color: var(--background);
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center
     }
 
     header nav .links ul {
