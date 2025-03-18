@@ -211,6 +211,7 @@ header nav .menu {
         align-items: center;
         justify-content: center;
         top: 0;
+        gap: 0;
         right: 0;
     }
 
@@ -225,6 +226,7 @@ header nav .menu {
     header nav .links ul {
         flex-direction: column;
         position: relative;
+        top: -40px;
         display: flex;
     }
 
