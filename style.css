@@ -207,7 +207,7 @@ header nav .menu {
     }
 
     header nav .links.open {
-        display: block;
+        display: flex;
         background: var(--background);
         flex-direction: column;
         width: 100dvw;
