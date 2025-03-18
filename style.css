@@ -211,7 +211,7 @@ header nav .menu {
         background: var(--background);
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        height: 100%;
     }
 
     header nav .links ul {
