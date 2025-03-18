@@ -202,7 +202,12 @@ header nav .menu {
         font-size: 1.7rem;
     }
 
-    header nav .links {
+    header nav .links.close {
+        display: none;
+    }
+
+    header nav .links.open {
+        display: flex;
         background: var(--background);
         flex-direction: column;
         width: 80vw;
