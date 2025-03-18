@@ -203,7 +203,7 @@ header nav .menu {
     }
 
     header nav .links {
-        display: block;
+        display: flex;
         background: var(--background);
         flex-direction: column;
         width: 80vw;
