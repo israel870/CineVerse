@@ -224,6 +224,7 @@ header nav .menu {
         justify-content: center;
         align-items: center;
         width: 100vh;
+        display: block;
     }
 
 }
