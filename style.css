@@ -209,6 +209,8 @@ header nav .menu {
         width: 100vw;
         height: 100vh;
         position: fixed;
+        align-items: center;
+        justify-content: center;
         top: 0;
         left: 0;
     }
