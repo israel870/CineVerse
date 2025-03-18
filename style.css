@@ -208,15 +208,7 @@ header nav .menu {
 
     header nav .links.open {
         display: block;
-        position: fixed;
-        top: 0px;
-        left: 200px;
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--background);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center
+        
     }
 
     header nav .links ul {
