@@ -8,56 +8,56 @@
     --text-heading: #ffffff;
     --body-text: #cccccc;
     --cations: #aaaaaa;
- }
- 
- @font-face {
+}
+
+@font-face {
     font-family: Parkinsans var;
     src: url(/fonts/Parkinsans-VariableFont_wght.ttf);
- }
- 
- @font-face {
+}
+
+@font-face {
     font-family: Parkinsans regular;
     src: url(/fonts/Parkinsans-Regular.ttf)
- }
- 
- @font-face {
+}
+
+@font-face {
     font-family: Parkinsans light;
     src: url(/fonts/Parkinsans-Light.ttf);
- }
- 
- @font-face {
+}
+
+@font-face {
     font-family: Parkinsans Medium;
     src: url(/fonts/Parkinsans-Medium.ttf);
- }
- 
- @font-face {
+}
+
+@font-face {
     font-family: Parkinsans Semibold;
     src: url(/fonts/Parkinsans-SemiBold.ttf);
- }
- 
- @font-face {
+}
+
+@font-face {
     font-family: Parkinsans Bold;
     src: url(/fonts/Parkinsans-Bold.ttf);
- }
- 
- @font-face {
+}
+
+@font-face {
     font-family: Parkinsans Extrabold;
     src: url(/fonts/Parkinsans-ExtraBold.ttf);
- }
- 
- * {
+}
+
+* {
     margin: 0;
     padding: 0;
     overflow: hidden;
- }
- 
- body {
+}
+
+body {
     background-color: var(--background);
     font-family: Parkinsans regular;
     overflow-x: hidden;
- }
- 
- header {
+}
+
+header {
     display: flex;
     align-items: center;
     width: 100vw;
@@ -65,9 +65,9 @@
     background-color: transparent;
     padding-left: 7%;
     padding-right: 7%;
- }
- 
- header nav {
+}
+
+header nav {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -75,130 +75,130 @@
     height: 60px;
     width: 86%;
     background-color: transparent;
- }
- 
- header nav h2 {
+}
+
+header nav h2 {
     font-family: Parkinsans var;
     color: var(--text-heading);
- }
- 
- header nav h2 span {
+}
+
+header nav h2 span {
     color: var(--highlight-color);
- }
- 
- header nav ul {
+}
+
+header nav ul {
     display: flex;
     flex-direction: row;
     gap: 50px;
     list-style-type: none;
- }
- 
- header nav ul li .fa-xmark {
+}
+
+header nav ul li .fa-xmark {
     display: none;
-    color: var(--body-text);
- }
- 
- header nav ul li {
-    color: var(--body-text);
+    color: var(--text-heading);
+}
+
+header nav ul li {
+    color: var(--text-heading);
     font-family: Parkinsans var;
- }
- 
- header nav span i.fa-magnifying-glass,
- header nav span i.fa-bars {
+}
+
+header nav span i.fa-magnifying-glass,
+header nav span i.fa-bars {
     display: none;
-    color: var(--body-text);
- }
- 
- header nav span input {
+    color: var(--text-heading);
+}
+
+header nav span input {
     background: transparent;
     border: none;
     border-bottom: .5px solid var(--highlight-color);
     outline: none;
-    color: var(--body-text);
+    color: var(--text-heading);
     font-family: Parkinsans var;
     padding: 2px 3px;
- }
- 
- @media (max-width: 930px) {
- 
+}
+
+@media (max-width: 930px) {
+
     header nav h2 {
-       display: flex;
+        display: flex;
     }
- 
+
     header nav .close {
-       display: none;
+        display: none;
     }
- 
+
     header nav .open {
-       position: fixed;
-       width: 100vw;
-       height: 100vh;
-       background-color: var(--content);
-       top: 0;
-       left: 0;
-       align-items: center;
-       justify-content: center;
-       flex-direction: column;
-       gap: 80px;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--content);
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 80px;
     }
- 
+
     header nav span {
-       display: flex;
-       flex-direction: row;
-       gap: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
     }
- 
+
     header nav span .search-popup.close {
-       display: none;
+        display: none;
     }
- 
+
     header nav span .search-popup.open {
-       position: fixed;
-       width: 100vw;
-       height: 100vh;
-       background-color: var(--content-5);
-       top: 0;
-       left: 0;
-       display: flex;
-       justify-content: center;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--content-5);
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
     }
- 
+
     header nav span .search-popup input {
-       position: fixed;
-       top: 100px;
-       width: 80%;
-       max-width: 400px;
-       opacity: 1;
+        position: fixed;
+        top: 100px;
+        width: 80%;
+        max-width: 400px;
+        opacity: 1;
     }
- 
+
     header nav span .search-popup i {
-       position: fixed;
-       top: 40px;
-       right: 40px;
-       font-size: 1.7rem;
-       color: var(--body-text);
-       opacity: 1;
+        position: fixed;
+        top: 40px;
+        right: 40px;
+        font-size: 1.7rem;
+        color: var(--text-heading);
+        opacity: 1;
     }
- 
+
     header nav span i.fa-magnifying-glass,
     header nav span i.fa-bars {
-       display: block;
-       color: var(--body-text);
-       font-size: 1.4rem;
-    }
- 
-    header nav ul li .fa-xmark {
-       display: block;
-       position: fixed;
-       font-size: 1.7rem;
-       top: 40px;
-       right: 40px;
-       color: var(--body-text);
-    }
- 
-    header nav ul li {
-       color: var(--body-text);
-       font-size: 1.5rem;
-    }
- 
- }
+        display: block;
+        color: var(--text-heading;
+                font-size: 1.4rem;
+        }
+
+        header nav ul li .fa-xmark {
+            display: block;
+            position: fixed;
+            font-size: 1.7rem;
+            top: 40px;
+            right: 40px;
+            color: var(--text-heading;
+            }
+
+            header nav ul li {
+                color: var(--text-heading;
+                    font-size: 1.5rem;
+                }
+
+            }
