@@ -8,231 +8,168 @@
     --text-heading: #ffffff;
     --body-text: #cccccc;
     --cations: #aaaaaa;
-}
+ }
+ 
  @font-face {
     font-family: Parkinsans var;
     src: url(/fonts/Parkinsans-VariableFont_wght.ttf);
  }
-
+ 
  @font-face {
     font-family: Parkinsans regular;
     src: url(/fonts/Parkinsans-Regular.ttf)
  }
-
+ 
  @font-face {
     font-family: Parkinsans light;
     src: url(/fonts/Parkinsans-Light.ttf);
  }
-
+ 
  @font-face {
     font-family: Parkinsans Medium;
     src: url(/fonts/Parkinsans-Medium.ttf);
  }
-
+ 
  @font-face {
     font-family: Parkinsans Semibold;
     src: url(/fonts/Parkinsans-SemiBold.ttf);
  }
-
+ 
  @font-face {
     font-family: Parkinsans Bold;
     src: url(/fonts/Parkinsans-Bold.ttf);
  }
-
+ 
  @font-face {
     font-family: Parkinsans Extrabold;
     src: url(/fonts/Parkinsans-ExtraBold.ttf);
  }
-
-body {
-    padding: 0;
+ 
+ * {
     margin: 0;
+    padding: 0;
+ }
+ 
+ body {
     background-color: var(--background);
     font-family: Parkinsans regular;
-}
-
-header {
-    width: 100%;
-    height: 50px;
+    overflow-x: hidden;
+ }
+ 
+ header {
     display: flex;
     align-items: center;
-    z-index: 1;
-    position: relative;
-    overflow-y: scroll;
-}
-
-header nav {
-    width: 100%;
-    padding: 0 10%;
-    align-items: center;
-}
-
-header nav,
-header nav .links,
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    color: var(--text-heading);
-    align-items: center;
-}
-
-header nav h2 {
-    color: var(--text-heading);
-    font-family: Parkinsans Bold;
-}
-
-header nav h2 span {
-    color: var(--highlight-color);
-}
-
-header nav .links,
-header nav ul {
-    gap: 40px;
-} 
-
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li:hover {
-    color: var(--highlight-color);
-    cursor: pointer;
-}
-
-header nav .links input {
-    height: 25px;
+    width: 100vw;
+    height: 70px;
     background-color: transparent;
-    border: none;
-    border-bottom: 1px solid var(--cations);
+    padding-left: 7%;
+    padding-right: 7%;
+ }
+ 
+ header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 86%;
+    background-color: transparent;
+ }
+ 
+ header nav h2 {
+    font-family: Parkinsans var;
+    color: var(--text-heading);
+ }
+ 
+ header nav h2 span {
+    color: var(--highlight-color);
+ }
+ 
+ header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    list-style-type: none;
+ }
+ 
+ header nav ul li .fa-xmark {
+    display: none;
+    color: var(--body-text);
+ }
+ 
+ header nav ul li {
     color: var(--body-text);
     font-family: Parkinsans var;
-    width: 200px;
-}
-
-header nav .links input:focus {
-    border-bottom: 1px solid var(--highlight-color);
-    outline: none;
-}
-
-main {
-    margin-top: -50px;
-}
-
-main .slider {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-}
-
-.slider .list .item {
-    position: absolute;
-    inset: 0 0 0 0;
-}
-
-.slider .list .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.slider .list .item .content {
-    position: absolute;
-    top: 20%;
-    width: 1140px;
-    max-width: 80%;
-    left: 10%;
-    padding-right: 30%;
-    box-sizing: border-box;
-    color: var(--body-text);
-    text-shadow: 0 5px 10px #0004;
-
-}
-
-.list .item .content .title {
-    color: var(--highlight-color);
-    font-family: Parkinsans Extrabold;
-    font-size: 2.3rem;
-    padding-bottom: 30px;
-}
-
-.list .item .content .buttons {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    gap: 20px;
-}
-
-.list .item .content .buttons button {
-background-color: transparent;
-border: none;
-}
-
-.list .item .content .buttons .btn1 {
-    color: var(--highlight-color);
-    font-size: 1.2rem;
-    font-family: Parkinsans Medium;
-}
-
-.list .item .content .buttons .btn2 img{
-    height: 40px;
-}
-
-header nav .menu {
+ }
+ 
+ header nav span i.fa-magnifying-glass,
+ header nav span i.fa-bars {
     display: none;
-}
-
-@media all and (max-width: 918px) {
-
-    header nav .menu {
-        display: block;
+    color: var(--body-text);
+ }
+ 
+ header nav span input {
+    background: transparent;
+    border: none;
+    border-bottom: .5px solid var(--highlight-color);
+    outline: none;
+    color: var(--body-text);
+    font-family: Parkinsans var;
+    padding: 2px 3px;
+ }
+ 
+ @media (max-width: 930px) {
+ 
+    header nav h2 {
+       display: flex;
     }
-
-    nav .menu .open {
-        font-size: 1.7rem;
+ 
+    header nav .close {
+       display: none;
     }
-
-    nav .menu .close {
-        position: fixed; 
-        top: 50px;
-        right: 50px;
-        font-size: 1.7rem;
+ 
+    header nav .open {
+       position: fixed;
+       width: 100%;
+       height: 100%;
+       background-color: #660066;
+       top: 0;
+       left: 0;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       gap: 100px;
     }
-
-    header nav .links.close {
-        display: none;
+ 
+    header nav span {
+       display: flex;
+       flex-direction: row;
+       gap: 20px;
     }
-
-    header nav .links.open {
-        display: flex;
-        background: var(--background);
-        flex-direction: column;
-        width: 80vw;
-        height: 100vh;
-        position: fixed;
-        align-items: center;
-        justify-content: center;
-        top: 0;
-        gap: 0;
-        right: 0;
+ 
+    header nav span input {
+       display: none;
     }
-
-    /* header nav .links.open {
-        display: block;
-        background: var(--background);
-        flex-direction: column;
-        width: 100dvw;
-        height: 100dvh;
-    } */
-
-    header nav .links ul {
-        flex-direction: column;
-        position: relative;
-        top: -40px;
-        display: flex;
+ 
+    header nav span i.fa-magnifying-glass,
+    header nav span i.fa-bars {
+       display: block;
+       color: var(--body-text);
+       font-size: 1.4rem;
     }
-
-}
+ 
+    header nav ul li .fa-xmark {
+       display: block;
+       position: fixed;
+       font-size: 1.7rem;
+       top: 40px;
+       right: 40px;
+       color: var(--body-text);
+    }
+ 
+    header nav ul li {
+       color: var(--body-text);
+       font-size: 1.8rem;
+    }
+ 
+ }

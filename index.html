@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,69 +8,29 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d5c2afb46b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <header>
         <nav>
-            <h2>Cine<span>Verse</span></h2>
-            <span class="menu" onclick="openMenu()">
-                <i class="fa-solid fa-bars open"></i>
+            <h2><span>Cine</span>Verse</h2>
+            <ul class="menu close">
+                <li><i class="fa-solid fa-xmark"></i></li>
+                <li>Home</li>
+                <li>Movies</li>
+                <li>Series</li>
+                <li>Genre</li>
+            </ul>
+            <span class="input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text">
+                <i class="fa-solid fa-bars"></i>
             </span>
-            <div class="links close">
-                <span class="menu" onclick="closeMenu()">
-                    <i class="fa-solid fa-xmark close"></i></span>
-                <ul>
-                    <li>Home</li>
-                    <li>Movies</li>
-                    <li>Series</li>
-                    <li>Genre</li>
-                </ul>
-                <input type="text" placeholder="Discover new movies and TV shows...">
-            </div>
         </nav>
     </header>
 
-    <main>
-        <div class="slider">
-            <div class="list">
-                <div class="item">
-                    <img src="/images/poster.jpg" alt="poster">
-                    <div class="content">
-                        <div class="title">Venom:The last dance</div>
-                        <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam, distinctio neque tempora cupiditate deleniti exercitationem quae quasi velit ullam ipsum! Sint totam ipsa, alias quod cum consectetur architecto beatae!</div>
-                        <div class="buttons">
-                            <button type="button" class="btn1">See More</button>
-                            <button type="button" class="btn2"><img src="/images/downloading.png" alt="download"></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="/images/home3.jpg" alt="poster">
-                    <div class="content">
-                        <div class="title">Spiderman:Far from home</div>
-                        <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam, distinctio neque tempora cupiditate deleniti exercitationem quae quasi velit ullam ipsum! Sint totam ipsa, alias quod cum consectetur architecto beatae!</div>
-                        <div class="buttons">
-                            <button type="button" class="btn1">See More</button>
-                            <button type="button" class="btn2"><img src="/images/downloading.png" alt="download"></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="/images/home2.jpg" alt="poster">
-                    <div class="content">
-                        <div class="title">Avengers Infinity War</div>
-                        <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti veniam, distinctio neque tempora cupiditate deleniti exercitationem quae quasi velit ullam ipsum! Sint totam ipsa, alias quod cum consectetur architecto beatae!</div>
-                        <div class="buttons">
-                            <button type="button" class="btn1">See More</button>
-                            <button type="button" class="btn2"><img src="/images/downloading.png" alt="download"></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
     <script src="/app.js"></script>
-    
+
 </body>
+
 </html>

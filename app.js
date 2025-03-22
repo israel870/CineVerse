@@ -1,11 +1,13 @@
-function openMenu() {
-    console.log('hello word');
-    document.querySelector('.links').classList.remove("close")
-    document.querySelector('.links').classList.add("open")
-}
+document.querySelector('.fa-bars').addEventListener('click', () => {
 
-function closeMenu() {
-    console.log('hello word');
-    document.querySelector('.links').classList.add("close")
-    document.querySelector('.links').classList.remove("open")
-}
+    document.querySelector('.menu').classList.remove('close')
+    document.querySelector('.menu').classList.add('open')
+
+})
+
+document.querySelector('.fa-xmark').addEventListener('click', () => {
+
+    document.querySelector('.menu').classList.add('close')
+    document.querySelector('.menu').classList.close('open')
+
+})
